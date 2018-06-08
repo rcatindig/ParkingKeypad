@@ -310,7 +310,7 @@ const styles = StyleSheet.create({
 	},
 	searchText: {
 		color: '#ffffff',
-		fontSize: 70,
+		fontSize: 60,
 		fontWeight: 'bold'
 	}
 });
