@@ -18,7 +18,7 @@ class Home extends Component {
 
 		this.setState({searchString: searchString.length < 7 ? searchString + character : searchString});
 
-		return true;
+		return false;
 	
 	}
 
@@ -27,6 +27,8 @@ class Home extends Component {
 		const { searchString } = this.state;
 
 		this.setState({searchString: searchString.slice(0, -1)});
+
+		return false;
 	}
 
     render() {
@@ -270,7 +272,7 @@ const styles = StyleSheet.create({
 		width: 420,
 		padding: 20,
 		borderWidth: 7,
-		borderColor: '#707070',
+		borderColor: '#dbdbdb',
 		//borderColor: '#000000',
 		fontSize: 80,
 		height: 150,
