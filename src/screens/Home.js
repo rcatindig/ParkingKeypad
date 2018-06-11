@@ -17,6 +17,8 @@ class Home extends Component {
 		const { searchString } = this.state;
 
 		this.setState({searchString: searchString.length < 7 ? searchString + character : searchString});
+
+		return true;
 	
 	}
 
@@ -37,7 +39,7 @@ class Home extends Component {
 
 		  	<View style={inputRow}>
 				<Text style={inputText}>{searchString}</Text>
-				<TouchableOpacity style={searchBtn} onPress={() => this.props.navigation.navigate('SearchResults')}>
+				<TouchableOpacity style={searchBtn} onPress={() => this.props.navigation.navigate('Search')}>
 					<Text style={searchText}>SEARCH</Text>
 				</TouchableOpacity>
 			</View>
