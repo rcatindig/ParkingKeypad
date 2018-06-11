@@ -5,15 +5,15 @@ class Result extends Component {
     render() {
         const { button, plateNumberText, dateTimeStyle, durationStyle } = styles;
 
-        const { onPress, plateNumber } = this.props;
+        const { onPress, plateNumber, dateTime, duration } = this.props;
 
         return (
             
 
             <TouchableOpacity style={button} onPress={onPress}>
-                <Text style={plateNumberText}>CZX1566</Text>
-                <Text style={dateTimeStyle}>01.12.2018 4:15AM</Text>
-                <Text style={durationStyle}>1d 5h 2m</Text>
+                <Text style={plateNumberText}>{plateNumber}</Text>
+                <Text style={dateTimeStyle}>{dateTime}</Text>
+                <Text style={durationStyle}>{duration}</Text>
             </TouchableOpacity>
         );
     }

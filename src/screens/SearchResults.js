@@ -13,15 +13,32 @@ const instructions = Platform.select({
 class SearchResults extends Component {
     
     render() {
-        const { goBack } = this.props.navigation;
+        const { goBack, navigate } = this.props.navigation;
         const { container, platesContainer, backNavigation, backNavigationText } = styles;  
         return (
           <View style={container}>
               <View style={platesContainer}>  
-                <Result />   
-                <Result />
-                <Result />
-                <Result />
+                <Result 
+                  plateNumber="CWZ4677"
+                  dateTime="01.04.2018 9:45 AM"
+                  duration="1d 2h 22m 34s" 
+                  onPress={() => navigate('PlateDetails')} />   
+                <Result 
+                  plateNumber="ACZ2315"
+                  dateTime="01.04.2018 9:45 AM"
+                  duration="1d 2h 22m 34s" 
+                  onPress={() => navigate('PlateDetails')} />   
+                <Result 
+                  plateNumber="GNO3530"
+                  dateTime="01.04.2018 9:45 AM"
+                  duration="1d 2h 22m 34s" 
+                  onPress={() => navigate('PlateDetails')} />   
+                <Result 
+                  plateNumber="MBO3900"
+                  dateTime="01.04.2018 9:45 AM"
+                  duration="1d 2h 22m 34s" 
+                  onPress={() => navigate('PlateDetails')} />   
+                
                 
               </View>
               <TouchableOpacity style={backNavigation} onPress={() => goBack()} >
