@@ -3,27 +3,24 @@ import { TabNavigator, StackNavigator } from 'react-navigation';
 
 // -- screens
 import Home from '../screens/Home';
-import Test from '../screens/Test'
-
-
-// const TestStack = StackNavigator({
-//     Test: {
-//         screen: Test,
-//         navigationOptions: {
-//             header: null
-//         }
-//     }
-// })
+import SearchResults from '../screens/SearchResults'
+import PlateDetails from '../screens/PlateDetails';
 
 const HomeStack = StackNavigator({
-    Home: {
-        screen: Home,
-        navigationOptions: {
-            header: null
-        }
-    },
-    Test: {
-        screen: Test,
+    // Home: {
+    //     screen: Home,
+    //     navigationOptions: {
+    //         header: null
+    //     }
+    // },
+    // SearchResults: {
+    //     screen: SearchResults,
+    //     navigationOptions: {
+    //         header: null
+    //     }
+    // },
+    PlateDetails: {
+        screen: PlateDetails,
         navigationOptions: {
             header: null
         }

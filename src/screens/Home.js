@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Platform, Button, TouchableOpacity, TextInput, Keyboard } from 'react-native';
+import { View, Text, StyleSheet, Button, TouchableOpacity, TextInput } from 'react-native';
 import { Key } from '../components';
 
-const instructions = Platform.select({
-    ios: 'Press Cmd+R to reload,\n' +
-      'Cmd+D or shake for dev menu',
-    android: 'Double tap R on your keyboard to reload,\n' +
-      'Shake or press menu button for dev menu',
-  });
-
-  Keyboard.dismiss();
-  
 
 class Home extends Component {
 	
@@ -46,7 +37,7 @@ class Home extends Component {
 
 		  	<View style={inputRow}>
 				<Text style={inputText}>{searchString}</Text>
-				<TouchableOpacity style={searchBtn} onPress={() => this.props.navigation.navigate('Test')}>
+				<TouchableOpacity style={searchBtn} onPress={() => this.props.navigation.navigate('SearchResults')}>
 					<Text style={searchText}>SEARCH</Text>
 				</TouchableOpacity>
 			</View>

@@ -10,9 +10,11 @@ const instructions = Platform.select({
   });
   
 
-class Test extends Component {
+class SearchResults extends Component {
+    
     render() {
-        const { container, platesContainer } = styles;  
+        const { goBack } = this.props.navigation;
+        const { container, platesContainer, backNavigation, backNavigationText } = styles;  
         return (
           <View style={container}>
               <View style={platesContainer}>  
@@ -20,7 +22,11 @@ class Test extends Component {
                 <Result />
                 <Result />
                 <Result />
-              </View>              
+                
+              </View>
+              <TouchableOpacity style={backNavigation} onPress={() => goBack()} >
+                  <Text style={backNavigationText}>Back</Text>
+              </TouchableOpacity>              
           </View>
           
         );
@@ -38,8 +44,24 @@ const styles = StyleSheet.create({
       //alignItems: 'flex-start',
       justifyContent: 'center',
       // width: 350,
-      flexWrap: 'wrap'
+      flexWrap: 'wrap',
     },
+    backNavigation: {
+      backgroundColor: "red",
+      position: 'absolute',
+      top: 10,
+      left: 10,
+      paddingTop: 12,
+      paddingRight: 20,
+      paddingBottom: 12,
+      paddingLeft: 20
+    },
+    backNavigationText: {
+      color: '#FFFFFF',
+      fontSize: 20,
+      fontWeight: 'bold'
+    }
+
 });
 
-export default Test;
+export default SearchResults;
