@@ -19,7 +19,7 @@ class Home extends Component {
 		this.setState({searchString: searchString.length < 7 ? searchString + character : searchString});
 
 		return false;
-	
+		
 	}
 
 	onClickDeleteKey = () => {
@@ -29,6 +29,7 @@ class Home extends Component {
 		this.setState({searchString: searchString.slice(0, -1)});
 
 		return false;
+
 	}
 
     render() {
@@ -41,7 +42,7 @@ class Home extends Component {
 
 		  	<View style={inputRow}>
 				<Text style={inputText}>{searchString}</Text>
-				<TouchableOpacity style={searchBtn} onPress={() => this.props.navigation.navigate('Search')}>
+				<TouchableOpacity style={searchBtn} onPress={() => this.props.navigation.navigate('SearchResults')}>
 					<Text style={searchText}>SEARCH</Text>
 				</TouchableOpacity>
 			</View>
@@ -149,43 +150,47 @@ class Home extends Component {
 						onPress={ () => this.onClickKey("A")} 
 						title="A"
 					/>
+					
 					<Key
 						onPress={ () => this.onClickKey("S")} 
-						title="S"
-						
+						title="S"	
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("D")} 
 						title="D"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("F")} 
 						title="F"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("G")} 
 						title="G"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("H")} 
 						title="H"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("J")} 
 						title="J"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("K")} 
 						title="K"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("L")} 
 						title="L"
 					/>
 					
-					
-					
-
 				</View>
 
 				<View style={ keyRow }>
@@ -199,14 +204,17 @@ class Home extends Component {
 						onPress={ () => this.onClickKey("X")} 
 						title="X"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("C")} 
 						title="C"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("V")} 
 						title="V"
 					/>
+
 					<Key
 						onPress={ () => this.onClickKey("B")} 
 						title="B"
