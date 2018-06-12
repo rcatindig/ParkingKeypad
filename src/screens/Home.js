@@ -84,7 +84,6 @@ class Home extends Component {
 					<Key
 						onPress={ () => this.onClickKey("9")}  
 						title="9"
-						
 					/>
 					<Key
 						onPress={ () => this.onClickKey("0")}  
@@ -150,7 +149,7 @@ class Home extends Component {
 						onPress={ () => this.onClickKey("A")} 
 						title="A"
 					/>
-					
+
 					<Key
 						onPress={ () => this.onClickKey("S")} 
 						title="S"	
