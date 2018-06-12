@@ -49,10 +49,7 @@ class PlateDetails extends Component {
                             <Text style={buttonText}>PAY</Text>
                         </TouchableOpacity>
                     </View>
-                </View>
-                
-
-                
+                </View>                
             </View>
         );
     }
