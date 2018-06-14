@@ -7,11 +7,8 @@ class PlateDetails extends Component {
     
     render() {
         
-        const { container, 
-                details, 
-                licenseContainer, 
-                detailsRow, 
-                detailsRowText, 
+        const { container,
+                licenseContainer,
                 detailsContainer, 
                 buttonRow, 
                 parkDetailStyle,
@@ -20,9 +17,10 @@ class PlateDetails extends Component {
                 buttonCancel,
                 buttonTextCancel } = styles;
 
-        const { goBack, navigate } = this.props.navigation;
+        const { navigate } = this.props.navigation;
          
         return (
+
             <View style={container}>
                 <View style={licenseContainer}>
                     <LicensePlate title="CWR3567"/>
