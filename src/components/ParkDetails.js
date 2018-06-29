@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, 
+        Text, 
+        StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
 
 
@@ -7,9 +9,14 @@ class ParkDetails extends Component {
     
     render() {
         
-        const { container, detailsRow, detailsRowText } = styles;
+        const { container, 
+                detailsRow, 
+                detailsRowText } = styles;
 
-        const { date, startTime, duration, amount } = this.props;
+        const { date, 
+                startTime, 
+                duration, 
+                amount } = this.props;
           
         return (
             <View style={container}>

@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { StyleSheet, Button, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, 
+        TouchableOpacity, 
+        Text } from 'react-native';
 
 class Key extends Component {
     render() {
-        const { button, buttonText } = styles;
+        const { button, 
+                buttonText } = styles;
 
-        const { onPress, title } = this.props;
+        const { onPress, 
+                title } = this.props;
 
         return (
             

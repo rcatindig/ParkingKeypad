@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { View, 
+        Text, 
+        StyleSheet, 
+        ImageBackground } from 'react-native';
 
 
 class LicensePlate extends Component {
     
     render() {
         
-        const { imgContainer, imageBg, plateText } = styles;
+        const { imgContainer, 
+                imageBg, 
+                plateText } = styles;
 
         const { title } = this.props;
           

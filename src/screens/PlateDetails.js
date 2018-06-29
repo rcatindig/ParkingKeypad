@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, ImageBackground, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, 
+        Text, 
+        StyleSheet, 
+        TouchableOpacity } from 'react-native';
 
-import { LicensePlate, ParkDetails } from '../components';
+import { LicensePlate, 
+        ParkDetails } from '../components';
 
 class PlateDetails extends Component {
     

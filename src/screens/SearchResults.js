@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Platform, TouchableOpacity } from 'react-native';
+import { View, 
+        Text, 
+        StyleSheet, 
+        TouchableOpacity } from 'react-native';
 import { Result } from '../components';
-
-const instructions = Platform.select({
-    ios: 'Press Cmd+R to reload,\n' +
-      'Cmd+D or shake for dev menu',
-    android: 'Double tap R on your keyboard to reload,\n' +
-      'Shake or press menu button for dev menu',
-  });
   
 
 class SearchResults extends Component {

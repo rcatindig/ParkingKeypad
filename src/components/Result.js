@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
-import { StyleSheet, Button, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, 
+        TouchableOpacity, 
+        Text } from 'react-native';
 
 class Result extends Component {
     render() {
-        const { button, plateNumberText, dateTimeStyle, durationStyle } = styles;
+        const { button, 
+                plateNumberText, 
+                dateTimeStyle, 
+                durationStyle } = styles;
 
-        const { onPress, plateNumber, dateTime, duration } = this.props;
+        const { onPress, 
+                plateNumber, 
+                dateTime, 
+                duration } = this.props;
 
         return (
             
