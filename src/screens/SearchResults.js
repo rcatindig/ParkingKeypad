@@ -9,8 +9,14 @@ import { Result } from '../components';
 class SearchResults extends Component {
     
     render() {
-        const { goBack, navigate } = this.props.navigation;
-        const { container, platesContainer, backNavigation, backNavigationText } = styles;  
+        const { goBack, 
+                navigate } = this.props.navigation;
+
+        const { container, 
+                platesContainer, 
+                backNavigation, 
+                backNavigationText } = styles; 
+                 
         return (
           <View style={container}>
               <View style={platesContainer}>  

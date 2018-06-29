@@ -36,12 +36,20 @@ class Home extends Component {
 	}
 
     render() {
-		const {  container, keyRow, keyBoard, deleteBtn, deleteText, inputRow, inputText, searchBtn, searchText } = styles;
+		const { container, 
+				keyRow, 
+				keyBoard, 
+				deleteBtn, 
+				deleteText, 
+				inputRow, 
+				inputText, 
+				searchBtn, 
+				searchText } = styles;
 
 		const { searchString } = this.state;
 
         return (
-          <View style={styles.container}>
+          <View style={container}>
 
 		  	<View style={inputRow}>
 				<Text style={inputText}>{searchString}</Text>
