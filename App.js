@@ -5,38 +5,42 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {
+	Component
+} from 'react';
 import {
-  StyleSheet,
+	StyleSheet,
 } from 'react-native';
 
-import { HomeStack } from './src/config/router';
+import {
+	HomeStack
+} from './src/config/router';
 
 
 type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <HomeStack />
-    );
-  }
+export default class App extends Component < Props > {
+	render() {
+		return ( <
+			HomeStack / >
+		);
+	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+	container: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: '#F5FCFF',
+	},
+	welcome: {
+		fontSize: 20,
+		textAlign: 'center',
+		margin: 10,
+	},
+	instructions: {
+		textAlign: 'center',
+		color: '#333333',
+		marginBottom: 5,
+	},
 });
