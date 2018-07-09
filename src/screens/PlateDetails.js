@@ -111,7 +111,6 @@ const styles = StyleSheet.create({
     buttonTextCancel: {
         color: '#FFFFFF'
     }
-    
 })
 
 export default PlateDetails;

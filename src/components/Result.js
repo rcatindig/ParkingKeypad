@@ -22,7 +22,7 @@ class Result extends Component {
                 <Text style={dateTimeStyle}>{dateTime}</Text>
                 <Text style={durationStyle}>{duration}</Text>
             </TouchableOpacity>
-            
+
         );
     }
 }
@@ -35,8 +35,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
-        margin: 10,
-        // flexDirection: 'column'
+        margin: 10
     },
     plateNumberText: {
         fontWeight: 'bold',

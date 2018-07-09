@@ -107,12 +107,10 @@ class Home extends Component {
 						onPress={ () => this.onClickKey("Q")} 
 						title="Q"
 					/>
-					
 					<Key
 						onPress={ () => this.onClickKey("W")} 
 						title="W"
 					/>
-					
 					<Key
 						onPress={ () => this.onClickKey("E")} 
 						title="E"
@@ -240,9 +238,6 @@ class Home extends Component {
 						title="M"
 					/>
 
-					
-					
-					
 					<TouchableOpacity style={deleteBtn} onPress={ () => this.onClickDeleteKey()} >
 						<Text style={deleteText}>DELETE</Text>
 					</TouchableOpacity>
@@ -261,7 +256,6 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-	  //backgroundColor: '#F5FCFF',
 	  backgroundColor: '#262626',
     },
     welcome: {
