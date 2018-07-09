@@ -12,8 +12,6 @@ class Key extends Component {
                 title } = this.props;
 
         return (
-            
-
             <TouchableOpacity style={button} onPress={onPress}>
                 <Text style={buttonText}>{title}</Text>
             </TouchableOpacity>

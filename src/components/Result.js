@@ -16,13 +16,13 @@ class Result extends Component {
                 duration } = this.props;
 
         return (
-            
 
             <TouchableOpacity style={button} onPress={onPress}>
                 <Text style={plateNumberText}>{plateNumber}</Text>
                 <Text style={dateTimeStyle}>{dateTime}</Text>
                 <Text style={durationStyle}>{duration}</Text>
             </TouchableOpacity>
+            
         );
     }
 }
